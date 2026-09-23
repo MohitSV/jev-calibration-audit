@@ -1,0 +1,3 @@
+experiment,n,order,choice_counts,mean_prob,sampled_counts,first_option_win_rate,max_abs_error_vs_fair,distinct_answers,tokens
+coin_blind_option_1_first,100,option_1 > option_2,"{""option_1"": 100}","{""option_1"": 0.837, ""option_2"": 0.163}","{""option_1"": 87, ""option_2"": 13}",1.0,0.337,14,35192
+coin_blind_option_2_first,100,option_2 > option_1,"{""option_1"": 100}","{""option_2"": 0.158, ""option_1"": 0.842}","{""option_1"": 85, ""option_2"": 15}",0.0,0.342,13,35192
