@@ -1,0 +1,84 @@
+{
+  "n_items": 300,
+  "n_calls": 900,
+  "models": [
+    "anthonym21/qwen3-0.6b-rlcd-decision@b327ec5e"
+  ],
+  "input_tokens": 0,
+  "methods": {
+    "choice_enc": {
+      "kl": 0.3546,
+      "tvd": 0.295,
+      "brier": 0.1958,
+      "acc_vs_majority": 0.5867,
+      "spearman_entropy": 0.1464,
+      "max_prob_by_bin": [
+        0.688,
+        0.671,
+        0.665,
+        0.696,
+        0.725
+      ]
+    },
+    "choice_cne": {
+      "kl": 0.3614,
+      "tvd": 0.3022,
+      "brier": 0.2084,
+      "acc_vs_majority": 0.5833,
+      "spearman_entropy": 0.1713,
+      "max_prob_by_bin": [
+        0.694,
+        0.661,
+        0.682,
+        0.688,
+        0.721
+      ]
+    },
+    "choice_avg": {
+      "kl": 0.3281,
+      "tvd": 0.2911,
+      "brier": 0.1903,
+      "acc_vs_majority": 0.59,
+      "spearman_entropy": 0.1393,
+      "max_prob_by_bin": [
+        0.682,
+        0.658,
+        0.663,
+        0.684,
+        0.712
+      ]
+    },
+    "noul_norm": {
+      "kl": 0.2803,
+      "tvd": 0.2895,
+      "brier": 0.1612,
+      "acc_vs_majority": 0.62,
+      "spearman_entropy": 0.0663,
+      "max_prob_by_bin": [
+        0.487,
+        0.462,
+        0.468,
+        0.474,
+        0.487
+      ]
+    }
+  },
+  "human_max_share_by_bin": [
+    0.454,
+    0.54,
+    0.643,
+    0.775,
+    0.915
+  ],
+  "bootstrap_ci95": {
+    "kl_noul_minus_choice_avg": [
+      -0.0785,
+      -0.018
+    ],
+    "spearman_noul_minus_choice_avg": [
+      -0.1717,
+      0.0194
+    ]
+  },
+  "noul_raw_sum_mean": 1.381
+}
