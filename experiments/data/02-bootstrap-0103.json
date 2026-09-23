@@ -1,0 +1,154 @@
+{
+  "note": "CIs resample repetitions 1-10 jointly across cells; template variation is not covered.",
+  "exp01": {
+    "heads_pull_no_evidence": {
+      "point": 0.354,
+      "ci95": [
+        0.347,
+        0.361
+      ]
+    },
+    "heads_pull_one_55pct_witness": {
+      "point": 0.063,
+      "ci95": [
+        0.055,
+        0.07
+      ]
+    },
+    "label_effect_no_evidence": {
+      "point": 0.027,
+      "ci95": [
+        0.02,
+        0.034
+      ]
+    },
+    "position_effect_no_evidence": {
+      "point": -0.015,
+      "ci95": [
+        -0.018,
+        -0.01
+      ]
+    },
+    "noul_logit_slope": {
+      "point": 0.445,
+      "ci95": [
+        0.432,
+        0.459
+      ]
+    },
+    "choice_mae_mean_over_label_sets": {
+      "point": 0.202,
+      "ci95": [
+        0.201,
+        0.202
+      ]
+    },
+    "noul_mae": {
+      "point": 0.073,
+      "ci95": [
+        0.071,
+        0.075
+      ]
+    }
+  },
+  "exp03": {
+    "loan_choice_jump_45_to_55": {
+      "point": 0.899,
+      "ci95": [
+        0.892,
+        0.905
+      ]
+    },
+    "loan_choice_mae": {
+      "point": 0.274,
+      "ci95": [
+        0.273,
+        0.275
+      ]
+    },
+    "loan_noul_mae": {
+      "point": 0.025,
+      "ci95": [
+        0.024,
+        0.025
+      ]
+    },
+    "loan_choice_at_tie": {
+      "point": 0.774,
+      "ci95": [
+        0.768,
+        0.779
+      ]
+    },
+    "routing_choice_jump_45_to_55": {
+      "point": 0.984,
+      "ci95": [
+        0.981,
+        0.987
+      ]
+    },
+    "routing_choice_mae": {
+      "point": 0.303,
+      "ci95": [
+        0.302,
+        0.303
+      ]
+    },
+    "routing_noul_mae": {
+      "point": 0.027,
+      "ci95": [
+        0.026,
+        0.027
+      ]
+    },
+    "routing_choice_at_tie": {
+      "point": 0.863,
+      "ci95": [
+        0.857,
+        0.869
+      ]
+    },
+    "refund_choice_jump_45_to_55": {
+      "point": 0.826,
+      "ci95": [
+        0.819,
+        0.832
+      ]
+    },
+    "refund_choice_mae": {
+      "point": 0.273,
+      "ci95": [
+        0.272,
+        0.274
+      ]
+    },
+    "refund_noul_mae": {
+      "point": 0.015,
+      "ci95": [
+        0.015,
+        0.016
+      ]
+    },
+    "refund_choice_at_tie": {
+      "point": 0.812,
+      "ci95": [
+        0.804,
+        0.819
+      ]
+    },
+    "ticket_billing_L2_choice": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "ticket_billing_L2_noul": {
+      "point": 0.829,
+      "ci95": [
+        0.825,
+        0.834
+      ]
+    }
+  }
+}
