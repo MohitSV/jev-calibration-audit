@@ -1,0 +1,21 @@
+9a10,11
+> DEVICE = "mps"  # PATCH: upstream hardcodes the CUDA device
+> 
+67c69
+<     policy = load_policy(args.init, device="cuda", backend=args.backend, lora=args.lora,
+---
+>     policy = load_policy(args.init, device=DEVICE, backend=args.backend, lora=args.lora,
+87c89
+<         log.log(eval_step=step, **evaluate(policy, eval_qs, args.max_len), sec=time.time() - t0)
+---
+>         log.log(eval_step=step, **evaluate(policy, eval_qs, args.max_len, device=DEVICE), sec=time.time() - t0)
+116,117c118,119
+<             with torch.autocast("cuda", dtype=torch.bfloat16):
+<                 logits, aux = policy.decision_logits(batch, args.max_len, "cuda")
+---
+>             with torch.autocast(DEVICE, dtype=torch.bfloat16):
+>                 logits, aux = policy.decision_logits(batch, args.max_len, DEVICE)
+142c144
+<     print(f"wall_sec={time.time() - t0:.1f} peak_vram_mb={torch.cuda.max_memory_allocated() // 2**20}")
+---
+>     print(f"wall_sec={time.time() - t0:.1f} peak_mps_mb={torch.mps.driver_allocated_memory() // 2**20}")

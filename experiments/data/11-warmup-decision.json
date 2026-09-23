@@ -1,0 +1,84 @@
+{
+  "gate": {
+    "eval_acc": 0.7355,
+    "eval_nll": 0.6410041510635495,
+    "eval_conf": 0.7587580456005187,
+    "eval_pred_last": 0.238,
+    "eval_ece": 0.04025342191812878,
+    "eval_brier": 0.35971719549733655,
+    "eval_entropy": 0.5695809515824841,
+    "eval_acc_ag_news": 0.824,
+    "eval_acc_banking77": 0.86,
+    "eval_acc_bitext": 0.948,
+    "eval_acc_boolq": 0.78,
+    "eval_acc_mnli": 0.716,
+    "eval_acc_sst5": 0.424,
+    "eval_acc_triage": 0.82,
+    "eval_acc_yelp": 0.512,
+    "n": 2000,
+    "gate_pass": true
+  },
+  "warmup_L2_saturation": 0.991,
+  "released_rlcd_L2_saturation": 0.952,
+  "verdict": "saturation already present before RL -> do not rent a GPU for this question",
+  "secondary": {
+    "warmup": {
+      "loan": {
+        "choice_jump_45_to_55": -0.029,
+        "mae_choice": 0.189,
+        "mae_noul": 0.193
+      },
+      "routing": {
+        "choice_jump_45_to_55": 0.012,
+        "mae_choice": 0.171,
+        "mae_noul": 0.386
+      },
+      "refund": {
+        "choice_jump_45_to_55": 0.005,
+        "mae_choice": 0.28,
+        "mae_noul": 0.355
+      }
+    },
+    "released": {
+      "loan": {
+        "choice_jump_45_to_55": -0.019,
+        "mae_choice": 0.184,
+        "mae_noul": 0.246
+      },
+      "routing": {
+        "choice_jump_45_to_55": -0.003,
+        "mae_choice": 0.223,
+        "mae_noul": 0.441
+      },
+      "refund": {
+        "choice_jump_45_to_55": 0.014,
+        "mae_choice": 0.278,
+        "mae_noul": 0.374
+      }
+    },
+    "warmup_witness_slope": {
+      "heads_tails": 0.843,
+      "tails_heads": 0.801,
+      "opt1_is_heads": 0.843,
+      "opt1_is_tails": 0.801,
+      "neutral_kvx_heads": 0.843,
+      "neutral_kvx_tails": 0.801,
+      "noul": 0.459
+    },
+    "warmup_ticket_choice": {
+      "neutral:L0": 0.017,
+      "billing:L1": 0.064,
+      "billing:L2": 0.986,
+      "billing:L3": 0.989,
+      "billing:L4": 0.981,
+      "billing:L5": 0.988,
+      "technical:L1": 0.003,
+      "technical:L2": 0.005,
+      "technical:L3": 0.001,
+      "technical:L4": 0.002,
+      "technical:L5": 0.002,
+      "mixed:BT": 0.309,
+      "mixed:TB": 0.218
+    }
+  }
+}
