@@ -1,0 +1,264 @@
+{
+  "fit": {
+    "noul_logit_multiplier": 1.801203,
+    "choice_logit_multiplier": 0.339217,
+    "choice_temperature": 2.947966,
+    "content_free_prior_logits": {
+      "heads_tails": 2.202426,
+      "loan::no_first": 1.021019,
+      "loan::yes_first": 1.473352,
+      "neutral_kvx_heads": 1.9027,
+      "neutral_kvx_tails": 2.244781,
+      "opt1_is_heads": 2.008888,
+      "opt1_is_tails": 1.570647,
+      "refund::no_first": 1.432151,
+      "refund::yes_first": 1.501972,
+      "routing::no_first": 1.740082,
+      "routing::yes_first": 1.958474,
+      "tails_heads": 2.577919
+    }
+  },
+  "heldout": {
+    "base_rate": {
+      "raw_choice": {
+        "brier": 0.0895,
+        "log_loss": 1.8468,
+        "excess_log_loss": 1.2635,
+        "smooth_ece": 0.281
+      },
+      "raw_noul": {
+        "brier": 0.0008,
+        "log_loss": 0.5853,
+        "excess_log_loss": 0.002,
+        "smooth_ece": 0.0157
+      },
+      "normalized_noul": {
+        "brier": 0.0006,
+        "log_loss": 0.5849,
+        "excess_log_loss": 0.0016,
+        "smooth_ece": 0.0158
+      },
+      "platt_noul": {
+        "brier": 0.0126,
+        "log_loss": 0.6297,
+        "excess_log_loss": 0.0464,
+        "smooth_ece": 0.1035
+      },
+      "temperature_choice": {
+        "brier": 0.0332,
+        "log_loss": 0.8087,
+        "excess_log_loss": 0.2254,
+        "smooth_ece": 0.1468
+      },
+      "prior_divided_choice": {
+        "brier": 0.0767,
+        "log_loss": 1.792,
+        "excess_log_loss": 1.2087,
+        "smooth_ece": 0.2462
+      },
+      "n_observations": 390,
+      "bootstrap": {
+        "n_clusters": 65,
+        "brier_ci95": {
+          "raw_choice": [
+            0.07675,
+            0.10103
+          ],
+          "raw_noul": [
+            0.00059,
+            0.00099
+          ],
+          "normalized_noul": [
+            0.00049,
+            0.00079
+          ],
+          "platt_noul": [
+            0.01102,
+            0.01427
+          ],
+          "temperature_choice": [
+            0.02858,
+            0.03775
+          ],
+          "prior_divided_choice": [
+            0.06329,
+            0.08984
+          ],
+          "normalized_noul-raw_choice": [
+            -0.10032,
+            -0.07622
+          ],
+          "normalized_noul-raw_noul": [
+            -0.00037,
+            9e-05
+          ],
+          "normalized_noul-temperature_choice": [
+            -0.03698,
+            -0.02806
+          ]
+        }
+      }
+    },
+    "overall": {
+      "raw_choice": {
+        "brier": 0.0665,
+        "log_loss": 1.215,
+        "excess_log_loss": 0.6626,
+        "smooth_ece": 0.2257
+      },
+      "raw_noul": {
+        "brier": 0.006,
+        "log_loss": 0.572,
+        "excess_log_loss": 0.0196,
+        "smooth_ece": 0.0367
+      },
+      "normalized_noul": {
+        "brier": 0.0034,
+        "log_loss": 0.564,
+        "excess_log_loss": 0.0115,
+        "smooth_ece": 0.0274
+      },
+      "platt_noul": {
+        "brier": 0.0064,
+        "log_loss": 0.5761,
+        "excess_log_loss": 0.0236,
+        "smooth_ece": 0.044
+      },
+      "temperature_choice": {
+        "brier": 0.0216,
+        "log_loss": 0.6706,
+        "excess_log_loss": 0.1182,
+        "smooth_ece": 0.0586
+      },
+      "prior_divided_choice": {
+        "brier": 0.0601,
+        "log_loss": 1.2335,
+        "excess_log_loss": 0.681,
+        "smooth_ece": 0.1871
+      },
+      "n_observations": 960,
+      "bootstrap": {
+        "n_clusters": 150,
+        "brier_ci95": {
+          "raw_choice": [
+            0.05953,
+            0.07344
+          ],
+          "raw_noul": [
+            0.00436,
+            0.00762
+          ],
+          "normalized_noul": [
+            0.00256,
+            0.00435
+          ],
+          "platt_noul": [
+            0.00526,
+            0.0076
+          ],
+          "temperature_choice": [
+            0.01851,
+            0.02483
+          ],
+          "prior_divided_choice": [
+            0.05206,
+            0.06876
+          ],
+          "normalized_noul-raw_choice": [
+            -0.07025,
+            -0.05554
+          ],
+          "normalized_noul-raw_noul": [
+            -0.00412,
+            -0.00106
+          ],
+          "normalized_noul-temperature_choice": [
+            -0.02157,
+            -0.01494
+          ]
+        }
+      }
+    },
+    "witness": {
+      "raw_choice": {
+        "brier": 0.0508,
+        "log_loss": 0.7828,
+        "excess_log_loss": 0.2514,
+        "smooth_ece": 0.1878
+      },
+      "raw_noul": {
+        "brier": 0.0095,
+        "log_loss": 0.563,
+        "excess_log_loss": 0.0316,
+        "smooth_ece": 0.0679
+      },
+      "normalized_noul": {
+        "brier": 0.0053,
+        "log_loss": 0.5497,
+        "excess_log_loss": 0.0183,
+        "smooth_ece": 0.0536
+      },
+      "platt_noul": {
+        "brier": 0.0021,
+        "log_loss": 0.5394,
+        "excess_log_loss": 0.0081,
+        "smooth_ece": 0.0277
+      },
+      "temperature_choice": {
+        "brier": 0.0137,
+        "log_loss": 0.5761,
+        "excess_log_loss": 0.0448,
+        "smooth_ece": 0.0347
+      },
+      "prior_divided_choice": {
+        "brier": 0.0488,
+        "log_loss": 0.8513,
+        "excess_log_loss": 0.3199,
+        "smooth_ece": 0.1472
+      },
+      "n_observations": 570,
+      "bootstrap": {
+        "n_clusters": 85,
+        "brier_ci95": {
+          "raw_choice": [
+            0.04338,
+            0.05848
+          ],
+          "raw_noul": [
+            0.00682,
+            0.01226
+          ],
+          "normalized_noul": [
+            0.00391,
+            0.00689
+          ],
+          "platt_noul": [
+            0.00153,
+            0.00279
+          ],
+          "temperature_choice": [
+            0.01055,
+            0.01724
+          ],
+          "prior_divided_choice": [
+            0.03834,
+            0.05848
+          ],
+          "normalized_noul-raw_choice": [
+            -0.05445,
+            -0.03691
+          ],
+          "normalized_noul-raw_noul": [
+            -0.00684,
+            -0.00176
+          ],
+          "normalized_noul-temperature_choice": [
+            -0.01201,
+            -0.00492
+          ]
+        }
+      }
+    }
+  },
+  "split": "separate held-out files"
+}

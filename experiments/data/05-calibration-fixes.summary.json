@@ -1,0 +1,108 @@
+{
+  "fit": {
+    "noul_logit_multiplier": 1.767196,
+    "choice_logit_multiplier": 0.336951,
+    "choice_temperature": 2.967787,
+    "content_free_prior_logits": {
+      "heads_tails": 2.156617,
+      "loan::no_first": 1.02664,
+      "loan::yes_first": 1.48132,
+      "neutral_kvx_heads": 1.884986,
+      "neutral_kvx_tails": 2.243789,
+      "opt1_is_heads": 2.020083,
+      "opt1_is_tails": 1.530792,
+      "refund::no_first": 1.451059,
+      "refund::yes_first": 1.604436,
+      "routing::no_first": 1.679153,
+      "routing::yes_first": 1.940076,
+      "tails_heads": 2.586689
+    }
+  },
+  "heldout": {
+    "base_rate": {
+      "raw_choice": {
+        "brier": 0.0909,
+        "log_loss": 1.887,
+        "smooth_ece": 0.283
+      },
+      "normalized_noul": {
+        "brier": 0.0007,
+        "log_loss": 0.585,
+        "smooth_ece": 0.0174
+      },
+      "platt_noul": {
+        "brier": 0.0123,
+        "log_loss": 0.6277,
+        "smooth_ece": 0.1019
+      },
+      "temperature_choice": {
+        "brier": 0.0343,
+        "log_loss": 0.8148,
+        "smooth_ece": 0.1501
+      },
+      "prior_divided_choice": {
+        "brier": 0.0785,
+        "log_loss": 1.8319,
+        "smooth_ece": 0.2491
+      },
+      "n_observations": 390
+    },
+    "overall": {
+      "raw_choice": {
+        "brier": 0.0687,
+        "log_loss": 1.2468,
+        "smooth_ece": 0.2307
+      },
+      "normalized_noul": {
+        "brier": 0.0034,
+        "log_loss": 0.5641,
+        "smooth_ece": 0.0264
+      },
+      "platt_noul": {
+        "brier": 0.0064,
+        "log_loss": 0.5759,
+        "smooth_ece": 0.0412
+      },
+      "temperature_choice": {
+        "brier": 0.0219,
+        "log_loss": 0.6727,
+        "smooth_ece": 0.0638
+      },
+      "prior_divided_choice": {
+        "brier": 0.0615,
+        "log_loss": 1.2609,
+        "smooth_ece": 0.1943
+      },
+      "n_observations": 960
+    },
+    "witness": {
+      "raw_choice": {
+        "brier": 0.0535,
+        "log_loss": 0.8087,
+        "smooth_ece": 0.1948
+      },
+      "normalized_noul": {
+        "brier": 0.0053,
+        "log_loss": 0.5498,
+        "smooth_ece": 0.0525
+      },
+      "platt_noul": {
+        "brier": 0.0024,
+        "log_loss": 0.5405,
+        "smooth_ece": 0.0279
+      },
+      "temperature_choice": {
+        "brier": 0.0135,
+        "log_loss": 0.5755,
+        "smooth_ece": 0.033
+      },
+      "prior_divided_choice": {
+        "brier": 0.0499,
+        "log_loss": 0.8703,
+        "smooth_ece": 0.1568
+      },
+      "n_observations": 570
+    }
+  },
+  "split": "existing repeats: fit <= 5, score > 5"
+}
