@@ -1,0 +1,19 @@
+{
+  "choice_avg": {
+    "T_median": 6.33,
+    "heldout_kl_mean": 0.1629,
+    "heldout_kl_range": [
+      0.142,
+      0.182
+    ]
+  },
+  "noul_norm": {
+    "T_median": 1.36,
+    "heldout_kl_mean": 0.1758,
+    "heldout_kl_range": [
+      0.163,
+      0.189
+    ]
+  },
+  "items_where_choice_lt1pct_on_option_with_ge10pct_humans": 78
+}

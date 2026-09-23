@@ -1,0 +1,84 @@
+{
+  "n_items": 300,
+  "n_calls": 900,
+  "models": [
+    "jev-1.13.0"
+  ],
+  "input_tokens": 348018,
+  "methods": {
+    "choice_enc": {
+      "kl": 1.2092,
+      "tvd": 0.282,
+      "brier": 0.2027,
+      "acc_vs_majority": 0.6767,
+      "spearman_entropy": 0.4643,
+      "max_prob_by_bin": [
+        0.799,
+        0.803,
+        0.868,
+        0.864,
+        0.944
+      ]
+    },
+    "choice_cne": {
+      "kl": 1.2223,
+      "tvd": 0.2841,
+      "brier": 0.2051,
+      "acc_vs_majority": 0.67,
+      "spearman_entropy": 0.4636,
+      "max_prob_by_bin": [
+        0.802,
+        0.8,
+        0.877,
+        0.864,
+        0.946
+      ]
+    },
+    "choice_avg": {
+      "kl": 1.1499,
+      "tvd": 0.2828,
+      "brier": 0.2033,
+      "acc_vs_majority": 0.6767,
+      "spearman_entropy": 0.4687,
+      "max_prob_by_bin": [
+        0.801,
+        0.8,
+        0.872,
+        0.863,
+        0.945
+      ]
+    },
+    "noul_norm": {
+      "kl": 0.1934,
+      "tvd": 0.2049,
+      "brier": 0.0961,
+      "acc_vs_majority": 0.6567,
+      "spearman_entropy": 0.4543,
+      "max_prob_by_bin": [
+        0.592,
+        0.623,
+        0.645,
+        0.67,
+        0.764
+      ]
+    }
+  },
+  "human_max_share_by_bin": [
+    0.454,
+    0.54,
+    0.643,
+    0.775,
+    0.915
+  ],
+  "bootstrap_ci95": {
+    "kl_noul_minus_choice_avg": [
+      -1.1009,
+      -0.8224
+    ],
+    "spearman_noul_minus_choice_avg": [
+      -0.0909,
+      0.0613
+    ]
+  },
+  "noul_raw_sum_mean": 1.234
+}
