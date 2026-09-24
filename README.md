@@ -19,9 +19,11 @@ distributions (ChaosNLI, DICES-350).
   rate yields 0.90–0.996, and temperature scaling can't recover it.
 - **`Noul` (yes/no) tracks the same targets** to within 0.015–0.027. Asking one `Noul`
   per option and normalizing cuts held-out Brier error from 0.067 to 0.003.
-- **On real human disagreement, normalized `Noul` is 4–6× closer to the vote
-  distribution zero-shot.** `Choice` ranks disagreement as well, and matches `Noul` after
-  one per-task temperature.
+- **On real human disagreement, normalized `Noul` is closer to the vote distribution
+  zero-shot on every measure.** It is 1.3–2.1× better on Brier and TVD. On KL the gap is
+  1.4–6×, depending on how `Choice`'s exact zeros are clipped (see
+  `experiments/12-clip-sensitivity.md`). `Choice` ranks disagreement as well, and matches
+  `Noul` after one per-task temperature.
 - **Three open checkpoints that call themselves RLCD models fail the same audit** in
   different ways. A rebuild of the most faithful one's supervised warm-up shows its cue
   saturation predates its RL stage.
@@ -41,6 +43,7 @@ per experiment, with its pre-registration, commands, numbers and caveats.
 | `src/jevcal/calibrate.py` | Exp 05: repair methods, excess log loss, cluster-bootstrap CIs |
 | `src/jevcal/chaosnli.py`, `chaosnli_temperature.py` | Exp 06: ChaosNLI |
 | `src/jevcal/dices.py` | Exp 06b: DICES-350 |
+| `src/jevcal/clip_sensitivity.py` | Exp 12: sensitivity of log-based metrics to clipping exact zeros |
 | `src/jevcal/eve_pilot.py`, `eve_patch/` | Exp 11: rebuild of eve-rlcd's pre-RL warm-up on Apple MPS |
 | `experiments/` | Notes, raw responses (`data/*.jsonl`), summaries and figures |
 | `related-work/literature-review.md` | Prior work and community evaluations |

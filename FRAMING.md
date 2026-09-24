@@ -3,7 +3,17 @@
 The argument of the paper, what would falsify it, and how it has changed. Read this
 before writing or revising any section, and update it whenever the framing moves.
 
-## v2.8 update (2026-09-23, after experiment 11): current
+## v2.9 update (2026-09-24, after experiment 12): current
+
+- **The real-data headline is restated.** Choice returns many exact zeros, so the KL gap
+  depends on the clip ε. Meng 2026, an independent Jev audit, found the same for fitted
+  temperatures. Normalized Noul is closer on every metric. The clip-free gap is 1.3–2.1×
+  (Brier, TVD); the KL gap is 1.4–6× depending on ε. Exp 05's excess-log-loss gap is
+  33–58×; Brier ~20× (clip-free).
+- **Withdrawn:** "fitted temperatures don't transfer across tasks". Absolute T values are
+  clip-dependent. Kept: one fitted temperature brings Choice level with Noul at every ε.
+
+## v2.8 update (2026-09-23, after experiment 11)
 
 - **The "RL causes semantic-cue saturation" hypothesis from v2.7 is rejected** for the
   one implementation where it could be tested. The rebuilt pre-RL warm-up of eve-rlcd

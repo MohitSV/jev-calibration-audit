@@ -141,3 +141,15 @@ give the same answer:
 - The fitted temperatures differ between tasks (Choice 6.3 vs 9.3, Noul 1.4 vs 2.7), so
   one global temperature per question type would not transfer. A temperature has to be
   fitted per task.
+
+
+---
+
+## Correction (2026-09-24): KL depends on clipping exact zeros
+
+See `12-clip-sensitivity.md`. Choice returns many exact zeros, so the KL gap reported above
+(computed with ε = 1e-6) shrinks as ε grows: to about 2–2.6× at ε = 1e-2, and to
+1.4–1.6× at ε = 5e-2. The Brier and TVD figures don't depend on the clip. They still favour
+Noul, by 1.3–2.1×. Fitted temperatures also depend on ε, so their absolute values shouldn't
+be compared across tasks. The finding that a fitted temperature brings Choice level with
+Noul holds at every ε tested.

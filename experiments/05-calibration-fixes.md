@@ -162,3 +162,13 @@ This section corrects the result above rather than replacing it.
    log-loss figures in the earlier tables understated this.
 4. Platt Noul still wins on witness evidence only (Brier 0.0021) and still makes base
    rates worse (0.0126 vs 0.0008). Content-free prior division still fails.
+
+
+---
+
+## Correction (2026-09-24): excess log loss depends on clipping
+
+See `12-clip-sensitivity.md`. 126 of the 960 held-out raw-Choice answers are exactly 0 or 1.
+The raw-Choice vs normalized-Noul excess log-loss ratio is 58× at ε = 1e-6 (as reported
+above) and 33× at ε = 1e-2. The Brier ratio doesn't depend on the clip and stands at about
+19×.
