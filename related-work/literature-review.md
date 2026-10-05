@@ -65,3 +65,23 @@ Nakkiran 2024 smooth ECE).
 
 The underlying search covered about 45 write-ups, 9 arXiv preprints and 60+ prior-art papers.
 Platforms blocked: X (402), Reddit, Bluesky, Discord. Semantic Scholar was rate-limited.
+
+
+## Update 2026-10-04: concurrent work since 2026-09-24
+
+These were verified against arXiv/Zenodo abstract pages and, where noted in the paper,
+the full text. All are cited in the paper's related-work section.
+
+| Work | What it reports |
+|---|---|
+| Porcedda, arXiv 2609.35342 (Sys1Cal-v1) | Exact-probability T/F items. Mean total variation: Choice 0.236, Noul 0.082. |
+| Chen & Li, arXiv 2609.37470 (Probability Contracts) | Exact finite-world posteriors. Jev's event and choice interfaces disagree on 32.8% of pairs. |
+| Shankaranarayana, Runje & Jannink, arXiv 2610.01006 | Stated chances: one yes/no per outcome, rescaled, MAE 0.012, against 0.230 for Choice. Fair die gets 0.80 on "one". |
+| Khosla, Zenodo 10.5281/zenodo.22971492 | Preregistered ChaosNLI test. Choice confidence doesn't drop where annotators disagree; normalized Noul degrades less. Credits this repo. |
+| yanjn1388/jev-bayes (GitHub) | Preregistered Bayes problems. Choice's 45→55 jump is 0.49, Noul's 0.13. |
+| Deußer, Sparrenberg & Sifa, arXiv 2609.37647 | 37 datasets. Choice pooled ECE 0.028, but its top probability exceeds accuracy on 20 of 22 datasets. |
+| Li, He & Li, arXiv 2609.33209 | Coherence: Noul negation pairs miss summing to 1 by 0.064. |
+| Azizi et al., arXiv 2610.02586; Gao et al., arXiv 2609.38827 | Labels override definitions (open models); ordinal-scale bias. |
+| Gao & Wang, arXiv 2609.38850; Deka, arXiv 2610.02486 | Open RLCD attempts. RL doesn't clearly beat cross-entropy on calibration. |
+| Nandakishore, arXiv 2609.33843 | Laya is uniformly under-confident on its own task. |
+| Tang & Zheng, arXiv 2609.32160 | Review of 28 early Jev papers. |

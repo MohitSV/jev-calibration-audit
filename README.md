@@ -15,18 +15,29 @@ distributions (ChaosNLI, DICES-350).
 - **With no evidence, Jev's `Choice` primitive gives a fair coin 0.83–0.93 on "heads".**
   The pull follows the word "heads", not the option key or its position, and mostly
   vanishes after one weak witness.
-- **On evidence that states a probability, `Choice` is a step function.** A 55/45 base
-  rate yields 0.90–0.996, and temperature scaling can't recover it.
-- **`Noul` (yes/no) tracks the same targets** to within 0.015–0.027. Asking one `Noul`
+- **On evidence that states a probability, `Choice` is a step function.**
+  - Moving a stated base rate from 45% to 55% raises it by 0.59–0.89, depending on
+    wording (exp 15). The correct change is 0.10.
+  - Temperature scaling can't recover it. Even a flexible monotone map leaves it 21× worse
+    than `Noul` on stated base rates.
+- **`Noul` (yes/no) tracks stated base rates** to within 0.014–0.029. Asking one `Noul`
   per option and normalizing cuts held-out Brier error from 0.067 to 0.003.
-- **On real human disagreement, normalized `Noul` is closer to the vote distribution
-  zero-shot on every measure.** It is 1.3–2.1× better on Brier and TVD. On KL the gap is
-  1.4–6×, depending on how `Choice`'s exact zeros are clipped (see
-  `experiments/12-clip-sensitivity.md`). `Choice` ranks disagreement as well, and matches
-  `Noul` after one per-task temperature.
+- **On real human disagreement (ChaosNLI, DICES-350), normalized `Noul` is closer to the
+  vote distribution than `Choice`.**
+  - On Brier and TVD it is 1.3–2.1× better. On KL the gap is 1.4–6×, depending on how
+    `Choice`'s exact zeros are clipped (exp 12).
+  - Neither beats a uniform guess on the most contested items (exp 14).
+  - `Choice` ranks disagreement as well, and matches `Noul` on average after one per-task
+    temperature.
 - **Three open checkpoints that call themselves RLCD models fail the same audit** in
   different ways. A rebuild of the most faithful one's supervised warm-up shows its cue
   saturation predates its RL stage.
+- **The headline probes reproduced unchanged on 2026-10-04** (exp 13), still on
+  `jev-1.13.0`.
+
+Several concurrent studies (late September to early October 2026) report the core
+`Choice`-vs-`Noul` gap independently. See the related-work section of the paper and
+`related-work/literature-review.md`.
 
 `FRAMING.md` records the argument and how it changed. `experiments/NN-*.md` holds one note
 per experiment, with its pre-registration, commands, numbers and caveats.
@@ -44,6 +55,8 @@ per experiment, with its pre-registration, commands, numbers and caveats.
 | `src/jevcal/chaosnli.py`, `chaosnli_temperature.py` | Exp 06: ChaosNLI |
 | `src/jevcal/dices.py` | Exp 06b: DICES-350 |
 | `src/jevcal/clip_sensitivity.py` | Exp 12: sensitivity of log-based metrics to clipping exact zeros |
+| `src/jevcal/baselines_monotone.py` | Exp 14: uniform baseline, per-stratum calibration, isotonic repair |
+| `src/jevcal/template_robustness.py` | Exp 15: the base-rate step under three wordings (pre-registered) |
 | `src/jevcal/eve_pilot.py`, `eve_patch/` | Exp 11: rebuild of eve-rlcd's pre-RL warm-up on Apple MPS |
 | `experiments/` | Notes, raw responses (`data/*.jsonl`), summaries and figures |
 | `related-work/literature-review.md` | Prior work and community evaluations |
