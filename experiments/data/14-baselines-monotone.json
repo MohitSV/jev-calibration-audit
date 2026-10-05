@@ -1,0 +1,108 @@
+{
+  "uniform_baseline": {
+    "chaosnli": {
+      "uniform": {
+        "brier": 0.24,
+        "hardest_bin": 0.058,
+        "easiest_bin": 0.513
+      },
+      "choice": {
+        "brier": 0.203,
+        "hardest_bin": 0.321,
+        "easiest_bin": 0.078
+      },
+      "noul_norm": {
+        "brier": 0.096,
+        "hardest_bin": 0.135,
+        "easiest_bin": 0.077
+      }
+    },
+    "dices": {
+      "uniform": {
+        "brier": 0.071,
+        "abs_err": 0.236,
+        "hardest_bin": 0.003,
+        "easiest_bin": 0.186
+      },
+      "choice": {
+        "brier": 0.092,
+        "abs_err": 0.249,
+        "hardest_bin": 0.153,
+        "easiest_bin": 0.011
+      },
+      "noul_norm": {
+        "brier": 0.067,
+        "abs_err": 0.198,
+        "hardest_bin": 0.109,
+        "easiest_bin": 0.017
+      }
+    }
+  },
+  "per_stratum_after_temperature": {
+    "T_choice": 5.87,
+    "T_noul": 1.36,
+    "by_bin": [
+      {
+        "bin": 0,
+        "human_top_share": 0.45,
+        "gap_choice_raw": 0.347,
+        "gap_choice_T": 0.039,
+        "gap_noul_raw": 0.138,
+        "gap_noul_T": 0.083
+      },
+      {
+        "bin": 1,
+        "human_top_share": 0.54,
+        "gap_choice_raw": 0.26,
+        "gap_choice_T": -0.0,
+        "gap_noul_raw": 0.083,
+        "gap_noul_T": 0.024
+      },
+      {
+        "bin": 2,
+        "human_top_share": 0.64,
+        "gap_choice_raw": 0.229,
+        "gap_choice_T": -0.081,
+        "gap_noul_raw": 0.003,
+        "gap_noul_T": -0.063
+      },
+      {
+        "bin": 3,
+        "human_top_share": 0.78,
+        "gap_choice_raw": 0.088,
+        "gap_choice_T": -0.186,
+        "gap_noul_raw": -0.105,
+        "gap_noul_T": -0.171
+      },
+      {
+        "bin": 4,
+        "human_top_share": 0.91,
+        "gap_choice_raw": 0.03,
+        "gap_choice_T": -0.2,
+        "gap_noul_raw": -0.151,
+        "gap_noul_T": -0.232
+      }
+    ]
+  },
+  "isotonic_repair": {
+    "overall": {
+      "n": 960,
+      "raw_choice": 0.0665,
+      "isotonic_choice": 0.0137,
+      "normalized_noul": 0.0034
+    },
+    "witness": {
+      "n": 570,
+      "raw_choice": 0.0508,
+      "isotonic_choice": 0.0144,
+      "normalized_noul": 0.0053
+    },
+    "base_rate": {
+      "n": 390,
+      "raw_choice": 0.0895,
+      "isotonic_choice": 0.0128,
+      "normalized_noul": 0.0006
+    },
+    "note": "Isotonic map fitted on the same templates as the holdout, so it is optimistic."
+  }
+}
