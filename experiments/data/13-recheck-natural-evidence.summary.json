@@ -1,0 +1,286 @@
+{
+  "n_calls": 156,
+  "models": [
+    "jev-1.13.0"
+  ],
+  "input_tokens": 54788,
+  "base_rate": {
+    "loan": {
+      "curve": [
+        {
+          "p_true": 0.1,
+          "choice": 0.01,
+          "noul": 0.12
+        },
+        {
+          "p_true": 0.2,
+          "choice": 0.02,
+          "noul": 0.2
+        },
+        {
+          "p_true": 0.3,
+          "choice": 0.02,
+          "noul": 0.29
+        },
+        {
+          "p_true": 0.35,
+          "choice": 0.02,
+          "noul": 0.32
+        },
+        {
+          "p_true": 0.4,
+          "choice": 0.065,
+          "noul": 0.37
+        },
+        {
+          "p_true": 0.45,
+          "choice": 0.06,
+          "noul": 0.4
+        },
+        {
+          "p_true": 0.5,
+          "choice": 0.765,
+          "noul": 0.54
+        },
+        {
+          "p_true": 0.55,
+          "choice": 0.945,
+          "noul": 0.56
+        },
+        {
+          "p_true": 0.6,
+          "choice": 0.965,
+          "noul": 0.63
+        },
+        {
+          "p_true": 0.65,
+          "choice": 0.975,
+          "noul": 0.67
+        },
+        {
+          "p_true": 0.7,
+          "choice": 0.98,
+          "noul": 0.68
+        },
+        {
+          "p_true": 0.8,
+          "choice": 0.99,
+          "noul": 0.78
+        },
+        {
+          "p_true": 0.9,
+          "choice": 0.99,
+          "noul": 0.87
+        }
+      ],
+      "mae_choice": 0.27,
+      "mae_noul": 0.024,
+      "choice_jump_45_to_55": 0.885,
+      "choice_at_tie": 0.765,
+      "order_effect_at_tie": 0.09
+    },
+    "routing": {
+      "curve": [
+        {
+          "p_true": 0.1,
+          "choice": 0.0,
+          "noul": 0.1
+        },
+        {
+          "p_true": 0.2,
+          "choice": 0.0,
+          "noul": 0.18
+        },
+        {
+          "p_true": 0.3,
+          "choice": 0.0,
+          "noul": 0.27
+        },
+        {
+          "p_true": 0.35,
+          "choice": 0.0,
+          "noul": 0.3
+        },
+        {
+          "p_true": 0.4,
+          "choice": 0.01,
+          "noul": 0.33
+        },
+        {
+          "p_true": 0.45,
+          "choice": 0.01,
+          "noul": 0.37
+        },
+        {
+          "p_true": 0.5,
+          "choice": 0.855,
+          "noul": 0.5
+        },
+        {
+          "p_true": 0.55,
+          "choice": 0.99,
+          "noul": 0.56
+        },
+        {
+          "p_true": 0.6,
+          "choice": 1.0,
+          "noul": 0.61
+        },
+        {
+          "p_true": 0.65,
+          "choice": 1.0,
+          "noul": 0.66
+        },
+        {
+          "p_true": 0.7,
+          "choice": 1.0,
+          "noul": 0.67
+        },
+        {
+          "p_true": 0.8,
+          "choice": 1.0,
+          "noul": 0.77
+        },
+        {
+          "p_true": 0.9,
+          "choice": 1.0,
+          "noul": 0.86
+        }
+      ],
+      "mae_choice": 0.302,
+      "mae_noul": 0.029,
+      "choice_jump_45_to_55": 0.98,
+      "choice_at_tie": 0.855,
+      "order_effect_at_tie": 0.03
+    },
+    "refund": {
+      "curve": [
+        {
+          "p_true": 0.1,
+          "choice": 0.0,
+          "noul": 0.1
+        },
+        {
+          "p_true": 0.2,
+          "choice": 0.01,
+          "noul": 0.18
+        },
+        {
+          "p_true": 0.3,
+          "choice": 0.025,
+          "noul": 0.3
+        },
+        {
+          "p_true": 0.35,
+          "choice": 0.04,
+          "noul": 0.33
+        },
+        {
+          "p_true": 0.4,
+          "choice": 0.075,
+          "noul": 0.37
+        },
+        {
+          "p_true": 0.45,
+          "choice": 0.08,
+          "noul": 0.42
+        },
+        {
+          "p_true": 0.5,
+          "choice": 0.815,
+          "noul": 0.51
+        },
+        {
+          "p_true": 0.55,
+          "choice": 0.885,
+          "noul": 0.54
+        },
+        {
+          "p_true": 0.6,
+          "choice": 0.955,
+          "noul": 0.62
+        },
+        {
+          "p_true": 0.65,
+          "choice": 0.98,
+          "noul": 0.67
+        },
+        {
+          "p_true": 0.7,
+          "choice": 0.99,
+          "noul": 0.71
+        },
+        {
+          "p_true": 0.8,
+          "choice": 1.0,
+          "noul": 0.8
+        },
+        {
+          "p_true": 0.9,
+          "choice": 1.0,
+          "noul": 0.86
+        }
+      ],
+      "mae_choice": 0.269,
+      "mae_noul": 0.016,
+      "choice_jump_45_to_55": 0.805,
+      "choice_at_tie": 0.815,
+      "order_effect_at_tie": 0.01
+    }
+  },
+  "cues": {
+    "neutral:L0": {
+      "choice_p_billing": 0.055,
+      "noul_p_billing": 0.16
+    },
+    "billing:L1": {
+      "choice_p_billing": 0.445,
+      "noul_p_billing": 0.47
+    },
+    "billing:L2": {
+      "choice_p_billing": 1.0,
+      "noul_p_billing": 0.84
+    },
+    "billing:L3": {
+      "choice_p_billing": 1.0,
+      "noul_p_billing": 0.91
+    },
+    "billing:L4": {
+      "choice_p_billing": 1.0,
+      "noul_p_billing": 0.95
+    },
+    "billing:L5": {
+      "choice_p_billing": 1.0,
+      "noul_p_billing": 0.96
+    },
+    "technical:L1": {
+      "choice_p_billing": 0.0,
+      "noul_p_billing": 0.06
+    },
+    "technical:L2": {
+      "choice_p_billing": 0.0,
+      "noul_p_billing": 0.04
+    },
+    "technical:L3": {
+      "choice_p_billing": 0.0,
+      "noul_p_billing": 0.02
+    },
+    "technical:L4": {
+      "choice_p_billing": 0.0,
+      "noul_p_billing": 0.02
+    },
+    "technical:L5": {
+      "choice_p_billing": 0.0,
+      "noul_p_billing": 0.02
+    },
+    "mixed:BT": {
+      "choice_p_billing": 0.295,
+      "noul_p_billing": 0.55
+    },
+    "mixed:TB": {
+      "choice_p_billing": 0.025,
+      "noul_p_billing": 0.39
+    }
+  },
+  "noul_complement_gap": 0.063
+}
