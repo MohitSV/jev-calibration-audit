@@ -10,6 +10,10 @@ exactly: a hidden fair coin with witnesses of stated reliability, and stated
 reference-class base rates. It then checks the conclusions against human vote
 distributions (ChaosNLI, DICES-350).
 
+**Paper:** Velu, M. S. (2026). *Calibrated Decisions Are Not Calibrated Probabilities: An
+Exact-Target Audit of Jev and Three Open Decision Models* (v1). Zenodo.
+[https://doi.org/10.5281/zenodo.23175660](https://doi.org/10.5281/zenodo.23175660)
+
 ## Main findings
 
 - **With no evidence, Jev's `Choice` primitive gives a fair coin 0.83–0.93 on "heads".**

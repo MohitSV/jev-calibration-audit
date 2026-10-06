@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "jev-calibration-audit"
+type: software
+authors:
+  - family-names: Velu
+    given-names: Mohit Shankar
+    email: mohit19sv@gmail.com
+repository-code: "https://github.com/MohitSV/jev-calibration-audit"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Velu
+      given-names: Mohit Shankar
+  title: "Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models"
+  year: 2026
+  version: v1
+  doi: "10.5281/zenodo.23175660"
+  publisher:
+    name: Zenodo

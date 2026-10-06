@@ -3,7 +3,25 @@
 The argument of the paper, what would falsify it, and how it has changed. Read this
 before writing or revising any section, and update it whenever the framing moves.
 
-## v2.9 update (2026-09-24, after experiment 12): current
+## v3.0 (2026-10-04, after experiments 13–15 and the concurrent-work sweep): current
+
+- **Positioning.** The core finding (Choice overconfident, Noul not; per-option Noul plus
+  normalization as the fix) was reported independently by several groups between
+  2026-09-26 and 10-01: Porcedda, Chen & Li, Shankaranarayana et al., Khosla (who credits
+  our repo for the ChaosNLI Noul comparison), and jev-bayes. The paper now presents itself
+  as agreeing with them, and contributes structure:
+  - the zero-evidence word/key/position decomposition with dose-response;
+  - the step size across three wordings (0.59–0.89, pre-registered; exp 15);
+  - repairs on a true holdout, including isotonic;
+  - the real-disagreement regime, with a uniform baseline and per-stratum calibration;
+  - three open RLCD-style checkpoints and the pre-RL rebuild (found nowhere else).
+- **Corrections folded in (exp 14):** neither primitive beats a uniform guess on contested
+  items; one temperature fixes calibration only on average, for both primitives;
+  "no monotone rescaling" is replaced by temperature (55×) and isotonic (21×) results.
+- **Stability:** the re-check on 10-04 (exp 13) reproduced every headline on the still-only
+  `jev-1.13.0`.
+
+## v2.9 update (2026-09-24, after experiment 12)
 
 - **The real-data headline is restated.** Choice returns many exact zeros, so the KL gap
   depends on the clip ε. Meng 2026, an independent Jev audit, found the same for fitted
