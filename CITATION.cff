@@ -15,7 +15,7 @@ preferred-citation:
       given-names: Mohit Shankar
   title: "Calibrated Decisions Are Not Calibrated Probabilities: An Exact-Target Audit of Jev and Three Open Decision Models"
   year: 2026
-  version: v1
-  doi: "10.5281/zenodo.23175660"
+  version: v2
+  doi: "10.5281/zenodo.23179064"
   publisher:
     name: Zenodo

@@ -11,8 +11,9 @@ reference-class base rates. It then checks the conclusions against human vote
 distributions (ChaosNLI, DICES-350).
 
 **Paper:** Velu, M. S. (2026). *Calibrated Decisions Are Not Calibrated Probabilities: An
-Exact-Target Audit of Jev and Three Open Decision Models* (v1). Zenodo.
-[https://doi.org/10.5281/zenodo.23175660](https://doi.org/10.5281/zenodo.23175660)
+Exact-Target Audit of Jev and Three Open Decision Models* (v2). Zenodo.
+[https://doi.org/10.5281/zenodo.23179064](https://doi.org/10.5281/zenodo.23179064)
+(all versions: [10.5281/zenodo.23175659](https://doi.org/10.5281/zenodo.23175659))
 
 ## Main findings
 
