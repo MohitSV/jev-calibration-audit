@@ -7,6 +7,7 @@ authors:
     given-names: Mohit Shankar
     email: mohit19sv@gmail.com
 repository-code: "https://github.com/MohitSV/jev-calibration-audit"
+license: MIT
 preferred-citation:
   type: article
   authors:

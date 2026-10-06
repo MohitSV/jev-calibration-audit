@@ -129,3 +129,7 @@ These are not redistributed here. Put them under `data/external/`, which is git-
   which silently defeats order manipulations.
 - Request `jev-latest` and record the `model` field of each response. `jev-1.13` is rejected.
 - Raw responses in `experiments/data/` are append-only; the notes cite them.
+
+## License
+
+Code: MIT (see `LICENSE`). Third-party data keeps its own terms: ChaosNLI is CC BY-NC 4.0, DICES is CC BY 4.0, and the patched eve-rlcd script is MIT (`src/jevcal/eve_patch/LICENSE-eve-rlcd`).
